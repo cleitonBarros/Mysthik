@@ -1,4 +1,4 @@
-import { ArrowFatLinesUp } from "@phosphor-icons/react";
+import { ArrowUp } from "@phosphor-icons/react";
 import * as S from "./style";
 
 export function Footer() {
@@ -27,7 +27,7 @@ export function Footer() {
           Cleiton Barros
         </a>
         <div onClick={scrollToTop} className="scroll-to-top">
-          <ArrowFatLinesUp size={40} color="#000"/>
+          <ArrowUp size={24} color="#000" />
         </div>
       </S.Copyright>
     </S.Container>

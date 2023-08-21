@@ -13,7 +13,7 @@ export function Home() {
     <>
       <Header />
       <S.Hero>
-        <div className="title">
+        <div className="title animate__animated  animate__fadeIn animate__slow	">
           <h1>
             Mysthik,
             <br />
@@ -24,13 +24,13 @@ export function Home() {
           <p>Venha aprender a cuidar de suas plantas !</p>
           <a href="#contato">Contate-me</a>
         </div>
-        <div className="img">
+        <div className="img animate__animated  animate__fadeIn animate__slow	">
           <img src={image} alt="duas tulipas" />
         </div>
       </S.Hero>
       <S.Funcionalidade id="funcionalidade">
         <h2>Como Funciona</h2>
-        <div className="card-info">
+        <div className="card-info animate__animated  animate__fadeIn animate__slow	">
           <Card
             icon={<ChatsTeardrop color="#ff69b4" size={64} />}
             title="Contato"
@@ -49,7 +49,7 @@ export function Home() {
         </div>
       </S.Funcionalidade>
       <S.Download id="app">
-        <div className="app">
+        <div className="app animate__animated  animate__fadeIn animate__slow	">
           <h2>Baixe Nosso App </h2>
           <p>
             Baixe nosso aplicativo para melhor usufruir, você conseguira marcar
@@ -67,7 +67,7 @@ export function Home() {
           Conheça nossos planos abaixo, e veja qual mais lhe agrada e combina
           com você.
         </p>
-        <div className="cards">
+        <div className="cards animate__animated  animate__fadeIn animate__slow	">
           <div className="card">
             <h3>Acacia</h3>
             <h4>34</h4>

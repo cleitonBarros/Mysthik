@@ -90,14 +90,17 @@ export const Copyright = styled.p`
     color: ${({ theme }) => theme.COLORS.BLACKOUT};;
   }
   .scroll-to-top {
-    background-color: ${({ theme }) => theme.COLORS.SNOW};
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px dashed black;
+    background-color: white;
     border-radius: 50%;
     position: fixed;
     bottom: 20px;
     right: 50px;
-    width: 50px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
     z-index: 100;
     cursor: pointer;
   }
