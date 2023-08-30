@@ -13,17 +13,17 @@ import { useEffect } from "react";
 export function Home() {
   useEffect(() => {
     ScrollReveal({
-      distance: "50px",
+      distance: "60px",
       duration: 1500,
       reset: true
     });
-    ScrollReveal().reveal(".text", { delay: 500, origin: "left" });
-    ScrollReveal().reveal(".paragraph", { delay: 700, origin: "top" });
-    ScrollReveal().reveal(".button ", { delay: 900, origin: "bottom" });
-    ScrollReveal().reveal(".img ", { delay: 1000, origin: "right" });
-    ScrollReveal().reveal(".card-1", { delay: 700, origin: "left" });
-    ScrollReveal().reveal(".card-2", { delay: 800, origin: "bottom" });
-    ScrollReveal().reveal(".card-3", { delay: 700, origin: "right" });
+    ScrollReveal().reveal(".text", { delay: 300, origin: "left" });
+    ScrollReveal().reveal(".paragraph", { delay: 500, origin: "top" });
+    ScrollReveal().reveal(".button ", { delay: 600, origin: "bottom" });
+    ScrollReveal().reveal(".img ", { delay: 700, origin: "right" });
+    ScrollReveal().reveal(".card-1", { delay: 200, origin: "left" });
+    ScrollReveal().reveal(".card-2", { delay: 300, origin: "bottom" });
+    ScrollReveal().reveal(".card-3", { delay: 200, origin: "right" });
 
 
   }, []);
