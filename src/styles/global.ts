@@ -11,12 +11,15 @@ export default createGlobalStyle`
         scroll-behavior:smooth;
     }
 
+    #root{
+        overflow: hidden;
+
+    }
     body{
         background: ${({ theme }) => theme.COLORS.WHITE};
         color: ${({ theme }) => theme.COLORS.BLACK};
         font-family: 'Poppins', sans-serif;
         -webkit-font-smoothing: antialiased;
-        overflow-x: hidden;
     }
 
     button, a{

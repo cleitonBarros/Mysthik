@@ -26,6 +26,7 @@ export const Hero = styled.section`
       color: ${({ theme }) => theme.COLORS.HOTPINK};
     }
     a {
+      margin-left: 2.4rem;
       font-size: 1.5rem;
       font-family: "Fredoka", sans-serif;
       font-weight: 500;
