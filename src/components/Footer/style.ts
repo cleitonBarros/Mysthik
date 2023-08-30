@@ -56,8 +56,9 @@ export const Contact = styled.div`
       cursor: pointer;
       width: 10rem;
       height: 3rem;
-      font-size: 1rem;
-      font-weight: 600;
+      font-size: 1.25rem;
+      font-family: "Fredoka", sans-serif;
+      font-weight: 500;
       border-radius: 30px;
       border: none;
       outline: none;
@@ -87,7 +88,7 @@ export const Copyright = styled.p`
   a {
     text-decoration: none;
     font-weight: 600;
-    color: ${({ theme }) => theme.COLORS.BLACKOUT};;
+    color: ${({ theme }) => theme.COLORS.BLACKOUT};
   }
   .scroll-to-top {
     display: flex;

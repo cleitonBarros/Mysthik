@@ -20,7 +20,6 @@ export default createGlobalStyle`
     }
 
     button, a{
-        font-family: inherit;
         cursor: pointer;
         transition: filter 0.2s;
     }

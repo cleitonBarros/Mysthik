@@ -26,9 +26,9 @@ export const Hero = styled.section`
       color: ${({ theme }) => theme.COLORS.HOTPINK};
     }
     a {
-      margin-left: 2.4rem;
-      font-size: 1.25rem;
-      font-weight: 600;
+      font-size: 1.5rem;
+      font-family: "Fredoka", sans-serif;
+      font-weight: 500;
       color: ${({ theme }) => theme.COLORS.BLACKOUT};
       position: relative;
       z-index: 5;
@@ -273,8 +273,9 @@ export const planos = styled.section`
       button {
         width: 12rem;
         height: 2.4rem;
-        font-size: 1rem;
-        font-weight: 600;
+        font-size: 1.25rem;
+        font-family: "Fredoka", sans-serif;
+        font-weight: 500;
         border-radius: 30px;
         border: none;
         outline: none;
