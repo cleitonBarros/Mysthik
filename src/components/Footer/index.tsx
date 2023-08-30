@@ -8,13 +8,13 @@ export function Footer() {
   return (
     <S.Container>
       <S.Contact id="contato">
-        <h2>Contato</h2>
-        <p>
+        <h2 className="text">Contato</h2>
+        <p className="paragraph">
           Entre em contato para sanar alguma duvida que apareceu ou outros
           motivos
         </p>
         <form>
-          <button type="button">Whatapp</button>
+          <button className="button" type="button">Whatapp</button>
         </form>
       </S.Contact>
       <S.Copyright>

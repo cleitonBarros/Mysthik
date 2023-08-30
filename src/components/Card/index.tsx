@@ -4,11 +4,12 @@ type cardProps = {
   text?: string;
   title?: string;
   icon?: JSX.Element;
+  className?: string;
 };
 
-export function Card({  text, title, icon }: cardProps) {
+export function Card({ className, text, title, icon }: cardProps) {
   return (
-    <S.Container >
+    <S.Container className={className}>
       <div>{icon}</div>
       <h4>{title}</h4>
       <p>{text}</p>

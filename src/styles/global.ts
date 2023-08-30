@@ -39,5 +39,13 @@ export default createGlobalStyle`
     html ::-webkit-scrollbar-track {
       background: ${({ theme }) => theme.COLORS.BLACK};
     }
+    .text, 
+    .card-1,
+    .card-2,
+    .card-3,
+    .paragraph, 
+    .button {
+    visibility: hidden;
+    }
 
 `;

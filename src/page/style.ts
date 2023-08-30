@@ -197,7 +197,6 @@ export const planos = styled.section`
     font-size: 0.875rem;
     line-height: 1.6rem;
     margin-bottom: 6rem;
-
   }
 
   .cards {
