@@ -13,8 +13,8 @@ import { useEffect } from "react";
 export function Home() {
   useEffect(() => {
     ScrollReveal({
-      distance: "60px",
-      duration: 500,
+      distance: "50px",
+      duration: 1500,
       reset: true
     });
     ScrollReveal().reveal(".text", { delay: 500, origin: "left" });

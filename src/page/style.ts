@@ -13,7 +13,7 @@ export const Hero = styled.section`
   .title {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
     h1 {
       font-size: 2.5rem;
       line-height: 1;
@@ -39,10 +39,12 @@ export const Hero = styled.section`
         position: absolute;
         content: "";
         left: -25px;
+        top: -8px;
         transform: skewX(-35deg);
-        width: 12rem;
-        height: 100%;
+        width: 11rem;
+        height: 3rem;
         z-index: -1;
+        border-radius: 10px;
         background-color: ${({ theme }) => theme.COLORS.PINK};
       }
       &:hover {
