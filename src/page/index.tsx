@@ -14,8 +14,7 @@ export function Home() {
   useEffect(() => {
     ScrollReveal({
       distance: "60px",
-      duration: 1500,
-      reset: true
+      duration: 1500
     });
     ScrollReveal().reveal(".text", { delay: 300, origin: "left" });
     ScrollReveal().reveal(".paragraph", { delay: 500, origin: "top" });
