@@ -80,7 +80,7 @@ export const Logo = styled.div`
     color: ${({ theme }) => theme.COLORS.BLACK};
   }
 `;
-export const Sidebar = styled.div`
+export const Sidebar = styled.menu`
   display: flex;
   align-items: center;
   justify-content: space-evenly;

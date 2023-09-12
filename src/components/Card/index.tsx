@@ -10,7 +10,7 @@ type cardProps = {
 export function Card({ className, text, title, icon }: cardProps) {
   return (
     <S.Container className={className}>
-      <div>{icon}</div>
+      <i>{icon}</i>
       <h4>{title}</h4>
       <p>{text}</p>
     </S.Container>

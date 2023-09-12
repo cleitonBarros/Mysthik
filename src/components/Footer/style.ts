@@ -4,7 +4,7 @@ import flowers from "./../../assets/flower.jpg";
 export const Container = styled.footer`
   width: 100%;
 `;
-export const Contact = styled.div`
+export const Contact = styled.article`
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -27,23 +27,28 @@ export const Contact = styled.div`
     z-index: 1;
   }
 
-  h2 {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: ${({ theme }) => theme.COLORS.WHITE};
-    margin-bottom: 3rem;
-    z-index: 2;
-  }
-  p {
-    width: 65%;
-    font-size: 1rem;
-    font-weight: 400;
-    color: ${({ theme }) => theme.COLORS.WHITE};
-    text-align: center;
+  hgroup {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-bottom: 6rem;
-    line-height: 1;
     z-index: 2;
+    h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: ${({ theme }) => theme.COLORS.WHITE};
+      margin-bottom: 3rem;
+      z-index: 2;
+    }
+    p {
+      width: 65%;
+      font-size: 1rem;
+      font-weight: 400;
+      color: ${({ theme }) => theme.COLORS.WHITE};
+      text-align: center;
+      line-height: 1;
+    }
   }
   form {
     z-index: 2;
@@ -67,11 +72,13 @@ export const Contact = styled.div`
   }
   @media (${({ theme }) => theme.DEVICE.mobile}) {
     padding: 5rem 10%;
-    h2 {
-      font-size: 2.5rem;
-    }
-    p {
-      font-size: 1.75rem;
+    hgroup {
+      h2 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.75rem;
+      }
     }
     form {
       flex-direction: row;

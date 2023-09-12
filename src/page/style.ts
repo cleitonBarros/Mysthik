@@ -150,13 +150,18 @@ export const Download = styled.section`
       margin-bottom: 1.5rem;
     }
 
-    .button-field {
-      display: flex;
-      gap: 1.5rem;
-      img {
-        cursor: pointer;
-        width: 9rem;
-        height: 2.7rem;
+    button {
+      background-color: transparent;
+      border: none;
+
+      .button-field {
+        display: flex;
+        gap: 1.5rem;
+        img {
+          cursor: pointer;
+          width: 9rem;
+          height: 2.7rem;
+        }
       }
     }
   }
@@ -187,19 +192,26 @@ export const planos = styled.section`
   padding: 5rem 6%;
   text-align: center;
 
-  h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: ${({ theme }) => theme.COLORS.BLACK};
-    margin-bottom: 1.5rem;
-  }
-  > p {
-    width: 80%;
-    font-weight: 400;
-    color: ${({ theme }) => theme.COLORS.BLACK};
-    font-size: 0.875rem;
-    line-height: 1.6rem;
+  hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 6rem;
+    text-align: center;
+    h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: ${({ theme }) => theme.COLORS.BLACK};
+      margin-bottom: 1.5rem;
+    }
+    p {
+      width: 80%;
+      font-weight: 400;
+      color: ${({ theme }) => theme.COLORS.BLACK};
+      font-size: 0.875rem;
+      line-height: 1.6rem;
+    }
   }
 
   .cards {
@@ -287,11 +299,13 @@ export const planos = styled.section`
 
   @media (${({ theme }) => theme.DEVICE.mobile}) {
     padding: 5rem 10%;
-    h2 {
-      font-size: 2.5rem;
-    }
-    p {
-      font-size: 1.25rem;
+    hgroup {
+      h2 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.25rem;
+      }
     }
   }
 `;
