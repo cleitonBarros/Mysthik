@@ -7,24 +7,10 @@ import apple from "./../assets/appstore.png";
 
 import * as S from "./style";
 import { Footer } from "../components/Footer";
-import ScrollReveal from "scrollreveal";
-import { useEffect } from "react";
+import { ScrollAnimation } from "../lib/scrollReveal";
 
 export function Home() {
-  useEffect(() => {
-    ScrollReveal({
-      distance: "60px",
-      duration: 1500
-    });
-    ScrollReveal().reveal(".text", { delay: 300, origin: "left" });
-    ScrollReveal().reveal(".paragraph", { delay: 500, origin: "top" });
-    ScrollReveal().reveal(".button ", { delay: 600, origin: "bottom" });
-    ScrollReveal().reveal(".img ", { delay: 700, origin: "right" });
-    ScrollReveal().reveal(".card-1", { delay: 200, origin: "left" });
-    ScrollReveal().reveal(".card-2", { delay: 300, origin: "bottom" });
-    ScrollReveal().reveal(".card-3", { delay: 200, origin: "right" });
-  }, []);
-
+  ScrollAnimation()
   return (
     <>
       <Header />

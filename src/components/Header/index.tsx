@@ -1,27 +1,11 @@
-import { useEffect, useState } from "react";
 import * as S from "./style";
 import { Link } from "react-scroll";
-import { Sling as Hamburger } from "hamburger-react";
-import { UseWindowSize } from "../../hook/useWidthSize";
-export function Header() {
-  const [isOpen, setOpen] = useState(false);
-  const [width] = UseWindowSize();
-  useEffect(() => {
-    if (width >= 765) {
-      setOpen(false);
-    }
-  }, [width]);
 
-  <Hamburger
-    onToggle={(toggled) => {
-      if (toggled) {
-        setOpen(true);
-        return;
-      } else {
-        setOpen(false);
-      }
-    }}
-  />;
+import { UseWindowSize } from "../../hook/useWidthSize";
+import { SiderMenu } from "../SiderMenu";
+export function Header() {
+  const [width] = UseWindowSize();
+
   return (
     <S.Container>
       <S.Nav>
@@ -34,115 +18,24 @@ export function Header() {
           <p>Mysthik</p>
         </S.Logo>
         {width < 765 ? (
-          <Hamburger toggled={isOpen} toggle={setOpen} />
+          <SiderMenu />
         ) : (
           <ul>
             <li>
-              <Link
-                to="funcionalidade"
-                smooth={true}
-                spy={true}
-                offset={-10}
-                duration={100}
-              >
-                Funcionalidade
-              </Link>
+              <a href="#funcionalidade">Funcionalidade</a>
             </li>
             <li>
-              <Link
-                to="app"
-                smooth={true}
-                spy={true}
-                offset={-10}
-                duration={100}
-              >
-                App
-              </Link>
+              <a href="#app">App</a>
             </li>
             <li>
-              <Link
-                to="planos"
-                smooth={true}
-                spy={true}
-                offset={-10}
-                duration={100}
-              >
-                Planos
-              </Link>
+              <a href="#planos">Planos</a>
             </li>
             <li>
-              <Link
-                to="contato"
-                smooth={true}
-                spy={true}
-                offset={-10}
-                duration={100}
-              >
-                contato
-              </Link>
+              <a href="#contato">contato</a>
             </li>
           </ul>
         )}
       </S.Nav>
-      <S.Sidebar className={isOpen ? "open" : ""}>
-        <S.Logo>
-          <div className="shape">
-            <div className="shape-1"></div>
-            <div className="shape-2"></div>
-            <div className="shape-3"></div>
-          </div>
-        </S.Logo>
-        <ul>
-          <li>
-            <Link
-              to="funcionalidade"
-              smooth={true}
-              spy={true}
-              offset={-10}
-              duration={100}
-              onClick={() => setOpen(false)}
-            >
-              Funcionalidade
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="app"
-              smooth={true}
-              spy={true}
-              offset={-10}
-              duration={100}
-              onClick={() => setOpen(false)}
-            >
-              App
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="planos"
-              smooth={true}
-              spy={true}
-              offset={-10}
-              duration={100}
-              onClick={() => setOpen(false)}
-            >
-              Planos
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="contato"
-              smooth={true}
-              spy={true}
-              offset={-10}
-              duration={100}
-              onClick={() => setOpen(false)}
-            >
-              contato
-            </Link>
-          </li>
-        </ul>
-      </S.Sidebar>
     </S.Container>
   );
 }
