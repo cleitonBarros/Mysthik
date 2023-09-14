@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import '@radix-ui/themes/styles.css';
 
 export default createGlobalStyle`
     *{
@@ -7,7 +8,6 @@ export default createGlobalStyle`
         box-sizing: border-box;
         text-decoration: none;
         list-style: none;
-        outline: none;
         scroll-behavior:smooth;
     }
 
