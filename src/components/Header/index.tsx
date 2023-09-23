@@ -1,5 +1,5 @@
 import * as S from "./style";
-import { Link } from "react-scroll";
+
 
 import { UseWindowSize } from "../../hook/useWidthSize";
 import { SiderMenu } from "../SiderMenu";

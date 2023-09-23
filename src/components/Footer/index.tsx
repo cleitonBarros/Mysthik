@@ -22,13 +22,13 @@ export function Footer() {
         </form>
       </S.Contact>
       <S.Copyright>
-        Feito por 🏳️‍🌈
+        Feito por 🌼  
         <a
           href="https://github.com/cleitonBarros"
           target="_blank"
           rel="noreferrer"
         >
-          Cleiton Barros
+           Cleiton Barros
         </a>
         <div onClick={scrollToTop} className="scroll-to-top">
           <ArrowUp size={24} color="#000" />

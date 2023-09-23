@@ -1,5 +1,5 @@
 import * as S from "./style";
-import { Link } from "react-scroll";
+
 import { UseWindowSize } from "../../hook/useWidthSize";
 import React from "react";
 import * as Dialog from "@radix-ui/react-dialog";
